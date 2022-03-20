@@ -14,7 +14,22 @@ class _GameState extends State<Game> {
       appBar: AppBar(
         title: const Text("JokenPo"),
       ),
-      body: Column(),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: const [
+          Padding(
+            padding: EdgeInsets.only(top: 32, bottom: 16),
+            child: Text(
+              "Escolha do App",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight:FontWeight.bold
+              ),
+            ),
+          )
+        ],
+      ),
     );
   }
 }
